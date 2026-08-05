@@ -32,6 +32,14 @@ This portfolio serves as a central showcase of my:
 
 ---
 
+## 🌐 Live Portfolio
+
+Explore the deployed version of my developer portfolio:
+
+👉 **[View Live Portfolio](https://surya63023.github.io/surya-dev-portfolio/)**
+
+---
+
 ## ✨ Portfolio Highlights
 
 - 🎨 Modern and developer-focused user interface
@@ -380,7 +388,7 @@ I'm always interested in learning, collaborating, contributing to meaningful pro
 [github.com/Surya63023](https://github.com/Surya63023)
 
 🌐 **Portfolio**  
-[View Live Portfolio](YOUR_LIVE_PORTFOLIO_URL)
+[View Live Portfolio](https://surya63023.github.io/surya-dev-portfolio/)
 
 ---
 
