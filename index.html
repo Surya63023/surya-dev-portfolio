@@ -1,0 +1,1177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surya Teja | Java Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Surya Teja — Java Full Stack Developer specializing in Spring Boot, REST APIs, React, and MySQL. Based in Bengaluru, India."
+    />
+
+    <meta
+      property="og:title"
+      content="Surya Teja | Java Full Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Java Full Stack Developer specializing in Spring Boot, REST APIs, React, and MySQL."
+    />
+    <meta property="og:type" content="website" />
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c5cfc'/%3E%3Cstop offset='1' stop-color='%23ff9257'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-size='56' font-family='Arial,sans-serif' font-weight='800' fill='white' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Ambient background depth layer -->
+    <div class="bg-orbs" aria-hidden="true">
+      <div class="bg-orb bg-orb--1"></div>
+      <div class="bg-orb bg-orb--2"></div>
+      <div class="bg-orb bg-orb--3"></div>
+    </div>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Custom cursor -->
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <!-- Scroll progress bar -->
+    <div class="progress-bar" aria-hidden="true">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader" aria-hidden="true">
+      <div class="loader-mark">S</div>
+      <div class="loader-bar"><span></span></div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="#home" class="nav-logo">
+          <span class="logo-badge">S</span>
+          <span class="logo-text">Surya Teja</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks" aria-label="Primary">
+          <a href="#home" class="nav-link active-link" data-nav>Home</a>
+          <a href="#about" class="nav-link" data-nav>About</a>
+          <a href="#skills" class="nav-link" data-nav>Skills</a>
+          <a href="#projects" class="nav-link" data-nav>Projects</a>
+          <a href="#education" class="nav-link" data-nav>Education</a>
+          <a href="#certifications" class="nav-link" data-nav>certificates</a>
+          <a href="#contact" class="nav-link" data-nav>Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a
+            href="https://drive.google.com/file/d/1tXkEV4bFxKHLy5B7a4aQnBMGdg2MMPGN/view?usp=sharing"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-ghost btn-sm nav-resume"
+            >Resume</a
+          >
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="navLinks"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section id="home" class="hero">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="hero-status reveal">
+              <span class="status-dot"></span> Open to opportunities &middot;
+              Bengaluru, India
+            </p>
+            <p class="hero-greeting reveal">Hi, I&apos;m</p>
+            <h1 class="hero-name reveal">
+              Surya <span class="text-gradient">Teja</span>
+            </h1>
+            <p class="hero-role reveal">
+              <span class="role-typed" id="roleTyped"></span
+              ><span class="typed-cursor">&nbsp;</span>
+            </p>
+            <p class="hero-bio reveal">
+              I build scalable backend systems and responsive full&#8209;stack
+              applications using Java, Spring Boot, REST&nbsp;APIs, and modern
+              web technologies.
+            </p>
+
+            <div class="hero-socials reveal">
+              <a
+                href="https://github.com/Surya63023"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub"
+                class="social-icon"
+                ><i class="devicon-github-original"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/suryateja-developer"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
+                class="social-icon"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M20.45 20.45h-3.56v-5.58c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.68H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="mailto:suryateja36200@gmail.com"
+                aria-label="Email"
+                class="social-icon"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="19"
+                  height="19"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <path d="m3 7 9 6 9-6" />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/surya__teja________/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram"
+                class="social-icon"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="18"
+                  height="18"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle
+                    cx="17.5"
+                    cy="6.5"
+                    r="1"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <div class="hero-cta reveal">
+              <a href="#projects" class="btn btn-primary">View My Work</a>
+              <a
+                href="https://drive.google.com/file/d/1tXkEV4bFxKHLy5B7a4aQnBMGdg2MMPGN/view?usp=sharing"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-ghost"
+                >Download Resume</a
+              >
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" aria-hidden="true">
+            <div class="orbit-visual">
+              <div class="orbit-core">
+                <img
+                  src="images/surya-profile.jpg"
+                  alt="Surya Teja"
+                  loading="eager"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <span class="orbit-core-fallback">S</span>
+              </div>
+              <div class="orbit-glow"></div>
+              <div class="orbit-ring orbit-ring--1">
+                <div class="orbit-item" style="--angle: 0deg">
+                  <i class="devicon-java-plain colored"></i>
+                </div>
+                <div class="orbit-item" style="--angle: 120deg">
+                  <i class="devicon-spring-plain colored"></i>
+                </div>
+                <div class="orbit-item" style="--angle: 240deg">
+                  <i class="devicon-mysql-plain colored"></i>
+                </div>
+              </div>
+              <div class="orbit-ring orbit-ring--2">
+                <div class="orbit-item" style="--angle: 60deg">
+                  <i class="devicon-react-original colored"></i>
+                </div>
+                <div class="orbit-item" style="--angle: 180deg">
+                  <i class="devicon-javascript-plain colored"></i>
+                </div>
+                <div class="orbit-item" style="--angle: 300deg">
+                  <i class="devicon-git-plain colored"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="#about"
+          class="scroll-cue"
+          aria-label="Scroll to About section"
+        >
+          <span></span>
+        </a>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="about">
+        <div class="section-inner">
+          <p class="eyebrow reveal">About Me</p>
+          <h2 class="section-title reveal">
+            Turning ideas into full&#8209;stack software.
+          </h2>
+
+          <div class="about-grid">
+            <div class="about-portrait reveal">
+              <div class="portrait-frame">
+                <img
+                  src="https://surya63023.github.io/surya-developer-portfolio/Images/About%20Me.png"
+                  alt="Surya Teja"
+                  loading="lazy"
+                  onerror="
+                    this.onerror = null;
+                    this.parentElement.classList.add('img-fallback');
+                    this.remove();
+                  "
+                />
+                <span class="portrait-fallback-mark">S</span>
+              </div>
+            </div>
+
+            <div class="about-copy">
+              <p class="reveal">
+                My path into software didn&apos;t start in computer science
+                &mdash; I hold a B.E. in Electrical &amp; Electronics
+                Engineering. I moved into full&#8209;stack development through a
+                dedicated Java Full Stack training program at Tap Academy, which
+                means I&apos;m used to building my fundamentals deliberately
+                rather than assuming them.
+              </p>
+              <p class="reveal">
+                Today my core focus is backend engineering: Java, Spring Boot,
+                Spring Security, JWT authentication, and JPA/Hibernate over
+                MySQL, all wired together through clean REST APIs. I pair that
+                with enough frontend fluency in HTML, CSS, JavaScript, and React
+                to design and ship a project end to end on my own, without
+                waiting on someone else to build the interface.
+              </p>
+              <p class="reveal">
+                Somewhere along the way the frontend side stopped being
+                &ldquo;the other half&rdquo; of full stack and became something
+                I genuinely enjoy &mdash; I&apos;ll happily spend real time on
+                interface polish, motion, and detail on projects where most
+                people wouldn&apos;t notice if I hadn&apos;t. This site is one
+                of them.
+              </p>
+              <p class="reveal">
+                Outside of project work, I practice data structures &amp;
+                algorithms consistently, because I&apos;d rather build that
+                muscle on purpose than rely on whatever shows up in day-to-day
+                feature work.
+              </p>
+
+              <div class="about-facts reveal">
+                <div class="fact">
+                  <span class="fact-label">Based in</span
+                  ><span class="fact-value">Bengaluru, India</span>
+                </div>
+                <div class="fact">
+                  <span class="fact-label">Focused on</span
+                  ><span class="fact-value"
+                    >Java &middot; Spring Boot &middot; REST APIs</span
+                  >
+                </div>
+                <div class="fact">
+                  <span class="fact-label">Background</span
+                  ><span class="fact-value"
+                    >B.Tech Electrical &amp; Electronics (2022&ndash;2025)</span
+                  >
+                </div>
+                <div class="fact">
+                  <span class="fact-label">Currently</span
+                  ><span class="fact-value">Open to entry-level SDE roles</span>
+                </div>
+              </div>
+
+              <div class="about-stats reveal">
+                <div class="stat">
+                  <span class="stat-num">10+</span>
+                  <span class="stat-label">Technologies</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-num">9</span>
+                  <span class="stat-label">Projects Shipped</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-num">100+</span>
+                  <span class="stat-label">DSA Problems</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="skills">
+        <div class="section-inner">
+          <p class="eyebrow reveal">What I Work With</p>
+          <h2 class="section-title reveal">Technical Skills</h2>
+
+          <div class="skills-grid">
+            <div class="skill-card reveal">
+              <h3 class="skill-cat-title">Frontend</h3>
+              <div class="skill-chips">
+                <span class="chip"
+                  ><i class="devicon-html5-plain colored"></i>HTML</span
+                >
+                <span class="chip"
+                  ><i class="devicon-css3-plain colored"></i>CSS</span
+                >
+                <span class="chip"
+                  ><i class="devicon-javascript-plain colored"></i
+                  >JavaScript</span
+                >
+                <span class="chip"
+                  ><i class="devicon-react-original colored"></i>React</span
+                >
+              </div>
+            </div>
+
+            <div class="skill-card reveal">
+              <h3 class="skill-cat-title">Backend &amp; Frameworks</h3>
+              <div class="skill-chips">
+                <span class="chip"
+                  ><i class="devicon-java-plain colored"></i>Java</span
+                >
+                <span class="chip"
+                  ><i class="devicon-spring-plain colored"></i>Spring Boot</span
+                >
+                <span class="chip">Spring MVC</span>
+                <span class="chip">Hibernate</span>
+                <span class="chip">Servlets</span>
+                <span class="chip">JSP</span>
+                <span class="chip">JEE</span>
+                <span class="chip">JDBC</span>
+                <span class="chip">REST APIs</span>
+              </div>
+            </div>
+
+            <div class="skill-card reveal">
+              <h3 class="skill-cat-title">Database &amp; Tools</h3>
+              <div class="skill-chips">
+                <span class="chip"
+                  ><i class="devicon-mysql-plain colored"></i>MySQL</span
+                >
+                <span class="chip">MySQL Workbench</span>
+                <span class="chip"
+                  ><i class="devicon-git-plain colored"></i>Git</span
+                >
+                <span class="chip"
+                  ><i class="devicon-github-original"></i>GitHub</span
+                >
+                <span class="chip">Eclipse</span>
+                <span class="chip"
+                  ><i class="devicon-vscode-plain colored"></i>VS Code</span
+                >
+              </div>
+            </div>
+
+            <div class="skill-card reveal">
+              <h3 class="skill-cat-title">Core Concepts</h3>
+              <div class="skill-chips">
+                <span class="chip">OOPs</span>
+                <span class="chip">Exception Handling</span>
+                <span class="chip">Multithreading</span>
+                <span class="chip">Data Structures &amp; Algorithms</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="projects">
+        <div class="section-inner">
+          <p class="eyebrow reveal">Selected Work</p>
+          <h2 class="section-title reveal">Featured Projects</h2>
+
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-media">
+                <img
+                  src="https://raw.githubusercontent.com/Surya63023/careerhub-smart-job-portal/main/screenshots/Candidate.png"
+                  alt="CareerHub candidate dashboard screenshot"
+                  loading="lazy"
+                  onerror="
+                    this.onerror = null;
+                    this.parentElement.classList.add('img-fallback');
+                    this.remove();
+                  "
+                />
+                <span class="media-fallback-mark">CH</span>
+              </div>
+              <div class="project-body">
+                <p class="project-tag">Enterprise Java Project</p>
+                <h3>CareerHub &mdash; Smart Job Portal</h3>
+                <p class="project-desc">
+                  An enterprise-grade recruitment platform connecting
+                  candidates, recruiters, and admins through JWT-secured,
+                  role-based dashboards. Its standout feature is an AI-powered
+                  resume matching and parsing engine that scores candidates
+                  against job requirements automatically. Built on a layered
+                  Spring Boot, Spring Security, and Hibernate architecture over
+                  MySQL.
+                </p>
+                <div class="project-tech">
+                  <span>Java</span><span>Spring Boot</span
+                  ><span>Spring Security</span><span>JWT</span
+                  ><span>Hibernate</span><span>MySQL</span
+                  ><span>REST APIs</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Surya63023/careerhub-smart-job-portal"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub &nearr;</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-media">
+                <img
+                  src="https://raw.githubusercontent.com/Surya63023/FoodieHub-Online-Food-Delivery-System/master/github-assets/foodiehub-home-page.png.png"
+                  alt="FoodieHub home page screenshot"
+                  loading="lazy"
+                  onerror="
+                    this.onerror = null;
+                    this.parentElement.classList.add('img-fallback');
+                    this.remove();
+                  "
+                />
+                <span class="media-fallback-mark">FH</span>
+              </div>
+              <div class="project-body">
+                <p class="project-tag">Full Stack Project</p>
+                <h3>FoodieHub &mdash; Online Food Delivery</h3>
+                <p class="project-desc">
+                  A full-stack food ordering platform where users browse
+                  restaurants, explore menus, manage a cart, and place orders
+                  end to end. Built on Java Servlets and JSP with a DAO-pattern
+                  data layer, following classic MVC architecture on Apache
+                  Tomcat &mdash; covering the complete order lifecycle from
+                  login through checkout.
+                </p>
+                <div class="project-tech">
+                  <span>Java</span><span>Servlets</span><span>JSP</span
+                  ><span>JDBC</span><span>MySQL</span><span>DAO Pattern</span
+                  ><span>Maven</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Surya63023/FoodieHub-Online-Food-Delivery-System"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub &nearr;</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-media">
+                <img
+                  src="https://raw.githubusercontent.com/Surya63023/hospital-management-system-java-full-stack-project/master/screenshots/admin-dashboard.png.png"
+                  alt="Hospital Management System admin dashboard screenshot"
+                  loading="lazy"
+                  onerror="
+                    this.onerror = null;
+                    this.parentElement.classList.add('img-fallback');
+                    this.remove();
+                  "
+                />
+                <span class="media-fallback-mark">HM</span>
+              </div>
+              <div class="project-body">
+                <p class="project-tag">Enterprise Java Project</p>
+                <h3>Hospital Management System</h3>
+                <p class="project-desc">
+                  An enterprise-style hospital platform with three role-based
+                  portals for admins, doctors, and patients. Handles appointment
+                  scheduling, prescriptions, medical reports, and department
+                  management, backed by session-based authentication and audit
+                  logging for full traceability.
+                </p>
+                <div class="project-tech">
+                  <span>Java</span><span>Jakarta Servlet</span><span>JSP</span
+                  ><span>JDBC</span><span>MySQL</span><span>DAO Pattern</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Surya63023/hospital-management-system-java-full-stack-project"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub &nearr;</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-media">
+                <img
+                  src="https://images.unsplash.com/photo-1757256137041-0aab889db199?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                  alt="Scientific calculator"
+                  loading="lazy"
+                  onerror="
+                    this.onerror = null;
+                    this.parentElement.classList.add('img-fallback');
+                    this.remove();
+                  "
+                />
+                <span class="media-fallback-mark">N</span>
+              </div>
+              <div class="project-body">
+                <p class="project-tag">Frontend Utility</p>
+                <h3>Nova &mdash; Scientific Calculator</h3>
+                <p class="project-desc">
+                  A feature-complete scientific calculator with a custom-built
+                  expression engine handling trigonometric, logarithmic, and
+                  exponential operations in both degree and radian modes.
+                  Includes memory functions, calculation history, and full
+                  keyboard support &mdash; built entirely in vanilla JavaScript
+                  with zero external math libraries.
+                </p>
+                <div class="project-tech">
+                  <span>HTML5</span><span>CSS3</span><span>JavaScript</span
+                  ><span>DOM API</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Surya63023/nova-scientific-calculator"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub &nearr;</a
+                  >
+                  <a
+                    href="https://surya63023.github.io/nova-scientific-calculator/"
+                    target="_blank"
+                    rel="noopener"
+                    >Live Demo &nearr;</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-media">
+                <img
+                  src="https://images.unsplash.com/photo-1746729798021-129315426424?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                  alt="Kanban board for task management"
+                  loading="lazy"
+                  onerror="
+                    this.onerror = null;
+                    this.parentElement.classList.add('img-fallback');
+                    this.remove();
+                  "
+                />
+                <span class="media-fallback-mark">F</span>
+              </div>
+              <div class="project-body">
+                <p class="project-tag">Productivity App</p>
+                <h3>Flow &mdash; Task Manager</h3>
+                <p class="project-desc">
+                  A productivity dashboard for planning and tracking daily
+                  tasks, with smart filters, live search, category tagging, and
+                  visual progress analytics. Task data persists locally via the
+                  Local Storage API, so it runs entirely without a backend, with
+                  full dark/light theme support.
+                </p>
+                <div class="project-tech">
+                  <span>HTML5</span><span>CSS3</span><span>JavaScript</span
+                  ><span>Local Storage API</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Surya63023/flow-task-manager"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub &nearr;</a
+                  >
+                  <a
+                    href="https://surya63023.github.io/flow-task-manager/"
+                    target="_blank"
+                    rel="noopener"
+                    >Live Demo &nearr;</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-media">
+                <img
+                  src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                  alt="Padlock representing digital security"
+                  loading="lazy"
+                  onerror="
+                    this.onerror = null;
+                    this.parentElement.classList.add('img-fallback');
+                    this.remove();
+                  "
+                />
+                <span class="media-fallback-mark">P</span>
+              </div>
+              <div class="project-body">
+                <p class="project-tag">Security Tool</p>
+                <h3>Password Generator Pro</h3>
+                <p class="project-desc">
+                  A security-focused password, passphrase, and PIN generator
+                  with a live entropy-based strength meter and one-click
+                  clipboard copy. Built in a fully modular CSS/JS architecture
+                  &mdash; separate modules for themes, animations,
+                  accessibility, and generation logic &mdash; everything runs
+                  client-side only.
+                </p>
+                <div class="project-tech">
+                  <span>HTML5</span><span>CSS3</span><span>JavaScript</span
+                  ><span>Clipboard API</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Surya63023/password-generator-pro"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub &nearr;</a
+                  >
+                  <a
+                    href="https://surya63023.github.io/password-generator-pro/"
+                    target="_blank"
+                    rel="noopener"
+                    >Live Demo &nearr;</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-media">
+                <img
+                  src="https://images.unsplash.com/photo-1758743527643-e1cebd8e01c4?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                  alt="Dramatic sky representing weather conditions"
+                  loading="lazy"
+                  onerror="
+                    this.onerror = null;
+                    this.parentElement.classList.add('img-fallback');
+                    this.remove();
+                  "
+                />
+                <span class="media-fallback-mark">SC</span>
+              </div>
+              <div class="project-body">
+                <p class="project-tag">API-Powered App</p>
+                <h3>SkyCart &mdash; Weather Dashboard</h3>
+                <p class="project-desc">
+                  A glassmorphic weather dashboard that pulls live conditions,
+                  humidity, wind, and sunrise/sunset data from the OpenWeather
+                  API for any searched city. The UI shifts gradients and
+                  iconography based on current conditions, built with modular
+                  vanilla JavaScript split across dedicated API and UI layers.
+                </p>
+                <div class="project-tech">
+                  <span>HTML5</span><span>CSS3</span><span>JavaScript</span
+                  ><span>OpenWeather API</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Surya63023/skycart-weather-app"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub &nearr;</a
+                  >
+                  <a
+                    href="https://surya63023.github.io/skycart-weather-app/"
+                    target="_blank"
+                    rel="noopener"
+                    >Live Demo &nearr;</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-media">
+                <img
+                  src="https://images.unsplash.com/photo-1599508704512-2f19efd1e35f?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                  alt="Neon question mark representing a quiz"
+                  loading="lazy"
+                  onerror="
+                    this.onerror = null;
+                    this.parentElement.classList.add('img-fallback');
+                    this.remove();
+                  "
+                />
+                <span class="media-fallback-mark">Q</span>
+              </div>
+              <div class="project-body">
+                <p class="project-tag">Interactive App</p>
+                <h3>Modern Quiz App</h3>
+                <p class="project-desc">
+                  An interactive quiz platform with countdown timers per
+                  question, instant answer validation, live score tracking, and
+                  a persistent theme preference. Built with a clean modular
+                  JavaScript architecture &mdash; separate modules for timer
+                  logic, question data, storage, and UI rendering.
+                </p>
+                <div class="project-tech">
+                  <span>HTML5</span><span>CSS3</span><span>JavaScript</span
+                  ><span>Local Storage API</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Surya63023/modern-quiz-app"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub &nearr;</a
+                  >
+                  <a
+                    href="https://surya63023.github.io/modern-quiz-app/"
+                    target="_blank"
+                    rel="noopener"
+                    >Live Demo &nearr;</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-media">
+                <img
+                  src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                  alt="Film projector representing movie discovery"
+                  loading="lazy"
+                  onerror="
+                    this.onerror = null;
+                    this.parentElement.classList.add('img-fallback');
+                    this.remove();
+                  "
+                />
+                <span class="media-fallback-mark">CV</span>
+              </div>
+              <div class="project-body">
+                <p class="project-tag">API-Powered App</p>
+                <h3>CineVerse &mdash; Movie Search App</h3>
+                <p class="project-desc">
+                  A movie discovery platform with real-time search, trending
+                  titles, and detailed movie info pulled from a live movie
+                  database API. Includes favorites and watchlist management
+                  persisted via Local Storage, plus PWA support, organized into
+                  clean single-responsibility JS modules.
+                </p>
+                <div class="project-tech">
+                  <span>HTML5</span><span>CSS3</span><span>JavaScript</span
+                  ><span>Fetch API</span><span>PWA</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Surya63023/cineverse-movie-search-app"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub &nearr;</a
+                  >
+                  <a
+                    href="https://surya63023.github.io/cineverse-movie-search-app/"
+                    target="_blank"
+                    rel="noopener"
+                    >Live Demo &nearr;</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education" class="education">
+        <div class="section-inner">
+          <p class="eyebrow reveal">Academic Background</p>
+          <h2 class="section-title reveal">Education</h2>
+
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <div class="timeline-node"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2022 &ndash; 2025</span>
+                <h3>Bachelor of Technology</h3>
+                <p class="timeline-sub">
+                  Electrical &amp; Electronics Engineering &middot; CGPA 8.51
+                </p>
+                <p>
+                  Built a strong academic foundation with consistent performance
+                  and a problem-solving focus.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item reveal">
+              <div class="timeline-node"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2025 &ndash; 2026</span>
+                <h3>Java Full Stack Development</h3>
+                <p class="timeline-sub">
+                  Professional Training Program &middot; Tap Academy
+                </p>
+                <p>
+                  Intensive hands-on training in Java, Spring Boot, JDBC,
+                  Servlets, JSP, React, REST APIs, MySQL, and Git.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section id="certifications" class="certifications">
+        <div class="section-inner">
+          <p class="eyebrow reveal">Credentials</p>
+          <h2 class="section-title reveal">Certifications</h2>
+
+          <div class="cert-grid">
+            <div class="cert-card reveal">
+              <div class="cert-icon">TA</div>
+              <h3>Full Stack Development</h3>
+              <p class="cert-issuer">Tap Academy</p>
+              <p>
+                Professional training covering Java, Spring Boot, JDBC,
+                Servlets, JSP, REST APIs, MySQL, and modern full-stack web
+                development.
+              </p>
+            </div>
+            <div class="cert-card reveal">
+              <div class="cert-icon">TCS</div>
+              <h3>Career Edge &ndash; Young Professional</h3>
+              <p class="cert-issuer">TCS iON &middot; 2025</p>
+              <p>
+                Industry-readiness certification covering communication,
+                workplace etiquette, presentation skills, and interview
+                preparation.
+              </p>
+            </div>
+            <div class="cert-card reveal">
+              <div class="cert-icon">N</div>
+              <h3>Cloud Computing</h3>
+              <p class="cert-issuer">
+                NPTEL &middot; IIT Kharagpur &middot; 2024
+              </p>
+              <p>
+                Academic certification on cloud infrastructure, virtualization,
+                and distributed, scalable computing systems.
+              </p>
+            </div>
+            <div class="cert-card reveal">
+              <div class="cert-icon">IS</div>
+              <h3>Young IoT Prodigy Program</h3>
+              <p class="cert-issuer">Infosys Springboard &middot; Apr 2024</p>
+              <p>
+                Program covering embedded systems, sensor integration, device
+                communication, and automation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="contact">
+        <div class="section-inner">
+          <p class="eyebrow reveal">Get In Touch</p>
+          <h2 class="section-title reveal">
+            Let&apos;s build something great.
+          </h2>
+          <p class="contact-sub reveal">
+            Open to entry-level Software Engineer / Java Full Stack Developer
+            roles &mdash; reach out, I reply fast.
+          </p>
+
+          <div class="contact-grid">
+            <div class="contact-info reveal">
+              <a href="mailto:suryateja36200@gmail.com" class="contact-row">
+                <span class="contact-icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <path d="m3 7 9 6 9-6" /></svg
+                ></span>
+                suryateja36200@gmail.com
+              </a>
+              <a href="tel:+916302379483" class="contact-row">
+                <span class="contact-icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"
+                    /></svg
+                ></span>
+                +91 63023 79483
+              </a>
+              <span class="contact-row contact-row--static">
+                <span class="contact-icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z" />
+                    <circle cx="12" cy="10" r="3" /></svg
+                ></span>
+                Bengaluru, Karnataka, India
+              </span>
+
+              <a
+                href="https://github.com/Surya63023"
+                target="_blank"
+                rel="noopener"
+                class="contact-row"
+              >
+                <span class="contact-icon"
+                  ><i class="devicon-github-original"></i
+                ></span>
+                github.com/Surya63023
+              </a>
+              <a
+                href="https://www.linkedin.com/in/suryateja-developer"
+                target="_blank"
+                rel="noopener"
+                class="contact-row"
+              >
+                <span class="contact-icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M20.45 20.45h-3.56v-5.58c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.68H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45z"
+                    /></svg
+                ></span>
+                linkedin.com/in/suryateja-developer
+              </a>
+              <a
+                href="https://www.instagram.com/surya__teja________/"
+                target="_blank"
+                rel="noopener"
+                class="contact-row"
+              >
+                <span class="contact-icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle
+                      cx="17.5"
+                      cy="6.5"
+                      r="1"
+                      fill="currentColor"
+                      stroke="none"
+                    /></svg
+                ></span>
+                instagram.com/surya__teja________
+              </a>
+            </div>
+
+            <form class="contact-form reveal" id="contactForm" novalidate>
+              <div class="form-row">
+                <label for="fname">Name</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="name"
+                  required
+                  placeholder="Your name"
+                />
+              </div>
+              <div class="form-row">
+                <label for="femail">Email</label>
+                <input
+                  type="email"
+                  id="femail"
+                  name="email"
+                  required
+                  placeholder="you@example.com"
+                />
+              </div>
+              <div class="form-row">
+                <label for="fmsg">Message</label>
+                <textarea
+                  id="fmsg"
+                  name="message"
+                  rows="5"
+                  required
+                  placeholder="Tell me about the role or project..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit">
+                Send Message
+              </button>
+              <p class="form-note" id="formNote" role="status"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="section-inner footer-inner">
+        <div class="footer-brand">
+          <span class="logo-badge">S</span>
+          <div>
+            <p class="footer-name">Surya Teja</p>
+            <p class="footer-tag">Java Full Stack Developer</p>
+          </div>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="footer-socials">
+          <a
+            href="https://github.com/Surya63023"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            class="social-icon"
+            ><i class="devicon-github-original"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/suryateja-developer"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            class="social-icon"
+          >
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path
+                d="M20.45 20.45h-3.56v-5.58c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.68H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45z"
+              />
+            </svg>
+          </a>
+          <a
+            href="mailto:suryateja36200@gmail.com"
+            aria-label="Email"
+            class="social-icon"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            >
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="m3 7 9 6 9-6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="section-inner footer-bottom">
+        <p>
+          &copy; <span id="year"></span> Surya Teja. Built with HTML, CSS &amp;
+          JavaScript.
+        </p>
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+          &uarr;
+        </button>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({ publicKey: "8497qhfTVx4tYVdM9" });
+      })();
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
